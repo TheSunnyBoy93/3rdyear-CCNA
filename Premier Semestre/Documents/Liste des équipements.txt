@@ -1,0 +1,33 @@
+Note projet CCNA
+
+
+site de PARIS
+	13 vlans
+	385 postes
+	6 Etgaes
+	7 Baies de brassage (une a chaque etage et une au RDC)
+	salle serveur au 6e etage
+	
+		EQUIPEMENTS PROBABLES
+		4 serveurs physique (AD, DNS, DHCP, PARTAGE, INTRANET, ...)
+		10 serveurs virtuels
+		1 Routeur (proxy)
+		10 Switchs
+		14 Bornes WIFI
+		3 Videoprojecteurs
+		3 Tableaux Numeriques
+		3 paires d'enceintes Audio
+		1 Onduleur
+
+site de PONTOISE
+	4 vlans
+	50 postes
+	1 etage
+		
+		EQUIPEMENTS PROBABLES
+			2 serveur physiques (AD, RADIUS, BD, ...)
+			1 serveur Radius
+			2 switchs (48 ports et POE 24 ports)
+			1 Routeur
+			2 ou 3 Bornes WIFI
+			1 Onduleur

@@ -1,0 +1,110 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname ROUTER_5
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2901/K9 sn FTX15247VMH-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ standby 2 ip 10.95.127.250
+ standby preempt
+!
+interface GigabitEthernet0/0.10
+ encapsulation dot1Q 10
+ ip address 10.95.127.254 255.255.128.0
+!
+interface GigabitEthernet0/0.20
+ encapsulation dot1Q 20
+ ip address 10.95.255.254 255.255.128.0
+!
+interface GigabitEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface FastEthernet0/0/0
+ switchport mode access
+ switchport nonegotiate
+!
+interface FastEthernet0/0/1
+ switchport mode access
+ switchport nonegotiate
+!
+interface FastEthernet0/0/2
+ switchport mode access
+ switchport nonegotiate
+!
+interface FastEthernet0/0/3
+ switchport mode access
+ switchport nonegotiate
+!
+interface Serial0/1/0
+ no ip address
+!
+interface Serial0/1/1
+ no ip address
+ clock rate 2000000
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
